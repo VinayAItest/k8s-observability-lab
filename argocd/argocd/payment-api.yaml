@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_GITHUB_USERNAME/k8s-observability-lab.git
+    repoURL: https://github.com/VinayAItest/k8s-observability-lab.git
     targetRevision: HEAD
     path: apps/payment-api
 
