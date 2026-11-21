@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: payment-api
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/YOUR_GITHUB_USERNAME/k8s-observability-lab.git
+    targetRevision: HEAD
+    path: apps/payment-api
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: payment
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
