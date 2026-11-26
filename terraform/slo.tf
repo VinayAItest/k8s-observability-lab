@@ -1,9 +1,10 @@
-resource "dynatrace_slo" "#name#" {
-  name = "#name#"
-  evaluation = "AGGREGATE"
-  filter = "type(\"APPLICATION_METHOD\")"
-  metric_expression = "builtin:apps.web.action.speedIndex.load.browser:splitBy()"
-  target = 99.58
-  timeframe = "-5m"
-  warning = 99.99
+resource "dynatrace_slo" "frontend_availability" {
+  name        = "Frontend Availability"
+  description = "Frontend uptime"
+
+  evaluation_type = "AGGREGATE"
+
+  metric_expression = "builtin:service.errors.server.rate"
+  target            = 99
+  warning           = 95
 }

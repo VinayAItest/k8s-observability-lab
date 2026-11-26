@@ -1,0 +1,56 @@
+{
+  "tiles": {
+    "846bba7e-c633-4de1-be64-f969f8f19277": {
+      "davis": {
+        "davisVisualization": {
+          "isAvailable": true
+        },
+        "enabled": false
+      },
+      "query": "",
+      "queryConfig": {
+        "subQueries": [
+          {
+            "convertToValue": "Avg",
+            "datatype": "metrics",
+            "id": "A",
+            "isEnabled": true,
+            "metric": {
+              "aggregation": "avg",
+              "key": ""
+            }
+          }
+        ],
+        "version": 20
+      },
+      "querySettings": {
+        "defaultSamplingRatio": 10,
+        "defaultScanLimitGbytes": 500,
+        "enableSampling": false,
+        "maxResultMegaBytes": 1,
+        "maxResultRecords": 1000
+      },
+      "title": "NayakJi",
+      "type": "data",
+      "visualization": "recordView",
+      "visualizationSettings": {
+        "autoSelectVisualization": true
+      }
+    }
+  },
+  "variables": [],
+  "annotations": [],
+  "settings": {},
+  "layouts": {
+    "846bba7e-c633-4de1-be64-f969f8f19277": {
+      "h": 6,
+      "w": 8,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "importedWithCode": false,
+  "version": 21,
+  "baseQueries": [],
+  "rows": []
+}
